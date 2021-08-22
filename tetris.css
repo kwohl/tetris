@@ -1,0 +1,106 @@
+:root {
+    --background-color: #05A5E1;
+    --dark-accent: #052F5F;
+    --button-color: #0167B0;
+    --game-background: #000;
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    font-family: Text_Font, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.game-wrapper {
+    display: flex;
+}
+
+.puzzle-container {
+    display: flex;
+    padding: 0 1vh;
+  }  
+  
+  .grid {
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--game-background);
+    overflow: hidden;
+  }
+  
+  .grid div {
+    height: 5vh;
+    width: 5vh;
+  }
+  
+  .tetromino {
+    background-color: blue;
+  }
+
+  .game-info-container {
+    width: calc(100vw - 52vh);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #start-button {
+      background-color: var(--button-color);
+      color: var(--text-color);
+      font-size: 2em;
+      padding: 2vh 5vh;
+      border-radius: 5px;
+      border: none;
+  }
+
+  #start-button:hover {
+      cursor: pointer;
+      background-color: var(--dark-accent);
+  }
+
+  .mini-grid {
+    margin: 5vh;
+    width: 24vh;
+    height: 24vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--game-background);
+  }
+  
+  .mini-grid div {
+    height: 6vh;
+    width: 6vh;
+  }
+
+  #end-game {
+    text-align: center;
+  }
+
+  #game-over {
+      margin: 2vh;
+  }
+
+  #new-game {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-size: 2em;
+    padding: 2vh 5vh;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .remove {
+      display: none;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
